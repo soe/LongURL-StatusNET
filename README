@@ -1,0 +1,25 @@
+## Overview
+
+Short URLs are counter-intuitive! Isn't it better if we know where the hyperlink is pointing from the link?
+
+Since onslaught of numerous short urls services, quite a few services have shut down and some services are unreliable. Let's claim back our freedom of using the hyperlinks as in their full form!
+
+This plugin use LongUrlPlease APIs to expand short urls created using most popular services so that readers can see where there short urls are pointing without clicking on those.
+
+## How to use?
+
+Put the plugin folder into "plugins" or "local" directory.
+
+Then edit config.php to add:
+
+    addPlugin('LongUrl', array('<method>'));
+
+> method can be 'all', 'start', 'start-and-end'
+> 'all' renders the long url in full length
+> 'start' renders first 30 characters of the long url
+> 'start-and-end' renders first 20 characters and last 20 characters of the long url
+>
+> default method is 'all'
+
+Enjoy using! Let's claim back our freedom!
+
